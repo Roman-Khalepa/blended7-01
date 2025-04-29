@@ -1,6 +1,88 @@
-function makeTransaction(quantity, pricePerDroid) {
-  return `You ordered ${quantity} droids worth ${pricePerDroid * quantity} credits!`;
-}
-console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
-console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+// Запропонуйте користувачу ввести число за допомогою prompt().
+// Збережіть введене значення у змінну number.
+// Перевірте, чи дорівнює змінна number числу 10:
+//    Якщо так – виведіть повідомлення 'Вірно' у alert().
+//    Якщо ні – виведіть 'Невірно'.
+
+// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
+// перетворіть значення на число за допомогою Number().
+
+// const number = Number(prompt('Введіть число:'));
+// if (number === 10) {
+//   alert('Вірно');
+// } else {
+//   alert('Невірно');
+// }
+
+
+// const message = number === 10 ? 'Вірно' : 'Невірно';
+// alert(message);
+
+
+
+
+// У змінній min лежить випадкове число від 0 до 59.
+// Визначте, в яку чверть години потрапляє
+// це число (у першу, другу, третю чи четверту).
+// Виведіть в alert відповідне повідомлення, наприклад:
+// "10 входить в першу чверть"
+
+// const min = Math.floor(Math.random() * (59 - 0) + 0);
+
+// const min = Math.floor(Math.random() * 60);
+// if (min >= 0 && min <= 14) {
+//   alert(`${min} входить в першу чверть`);
+  
+// } else if (min >= 15 && min <= 29) {
+//   alert(`${min} входить в першу чверть`);
+// }
+// else if (min >= 30 && min <= 44) {
+//   alert(`${min} входить в третю чверть`);
+// }
+// else if (min >= 45 && min <= 59) {
+//   alert(`${min} входить в четверту чверть`);
+// }
+ 
+
+
+
+
+
+// Змінна num може набувати 4 значення: '1', '2', '3' або '4' 
+// (запитуй це значення у користувача через prompt). 
+// Якщо вона має значення '1', то у змінну result запишіть 'зима',
+// якщо має значення '2' - 'весна' і так далі.
+// Розв'яжіть завдання через switch-case.
+// Не забудьте про дефолтне значення, на випадок, якщо користувач 
+// введе в prompt щось інше. В такому випадку result має набувати значення:
+// "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
+// Значення змінної result виведіть в консоль.
+
+// const num = prompt('Введіть число від 1 до 4');
+// let result;
+
+// switch (num) {
+//   case '1':
+//     result = 'зима';
+//     break;
+//   case '2':
+//     result = 'весна';
+//     break;
+//   case '3':
+//     result = 'літо';
+//     break;
+//   case '4':
+//     result = 'осінь';
+//     break;
+//   default:
+//     result = 'Вибачте, але ви маєте ввести значення від 1 до 4 включно';
+//     break;
+// }
+// console.log(result);
+// alert(result);
+
+
+
+
+
+
